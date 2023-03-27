@@ -84,6 +84,9 @@
     width: 90%;
     border-radius: 30px;
     border: 5px solid #B2B2B2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .maincontent{
     width: 75%;
@@ -118,12 +121,23 @@ body{
         width: auto;
       }
 
+p{
+    text-align:start;
+    font-size: 1.5rem;
+    
+}
+.left2 h1,.right2 h1{
+   display: none;
+}
+h1{
+    text-align: center;
+    margin: auto;
+    color: #B2B2B2;
+}
+
 /* phone */
 @media screen and (max-width: 480px) {
-    .maincontent,.maincontent1{
-        width: 100%;
-        margin:0 5px;
-    }
+    
     .horzline{
         height: 100%;
         width: 2%;
@@ -137,4 +151,73 @@ body{
     .maincircle{
         height: 20%;
     }
+    .center,.circle,.circle1{
+        display: none;
+        width: 0%;
+        height: 0%;
+
+    }
+    .right2 .year,.left2 .year{
+        width: 50%;
+        height: 30%;
+        background-color: #3C4048;
+        border: 5px solid #B2B2B2
+       
+
+    }
+    .left2{
+        display: flex;
+       justify-content: end;
+        align-items: center;
+    }
+    .right2{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .right1,.left1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .maincontent,.maincontent1{
+        margin:auto;
+        width: 100%;
+        height: 70%;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+    .horzline{
+        width:28%;
+    }
+    .newhor{
+        width:30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .maincontent1 p,.maincontent p{
+       font-size:0.7rem;
+        
+    }
+    .left2 h1,.right2 h1{
+        display: block;
+        margin-top: 18px;
+        color: #B2B2B2;
+     }
+    
+  }
+
+  /* mini */
+  @media screen and (max-width: 850px) {
+    p{
+        font-size: 1rem;
+    }
+
   }
